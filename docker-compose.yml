@@ -1,7 +1,18 @@
+version: '3.8'
+
 services:
   frontend:
-    build: .
+    # Nome do container para ficar fácil de achar
     container_name: topawards-front
-    ports:
-      - "8081:8081" # Vai rodar na porta 80 do servidor
+    
+    # Diz para o Docker construir usando o Dockerfile que está na raiz do repo
+    build:
+      context: .
+      dockerfile: Dockerfile
+    
+    # Reinicia sempre que o servidor ligar ou se cair
     restart: always
+    
+    # Mapeia a porta 80 do container para a 8080 do servidor
+    ports:
+      - "8081:8081"
