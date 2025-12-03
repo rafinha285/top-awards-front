@@ -10,5 +10,14 @@ export const ErrorCode = {
     ENCRYPTION_ERROR: 'ENCRYPTION_ERROR',
     UNKNOWN_ERROR: 'UNKNOWN_ERROR',
     USER_ERROR: 'USER_ERROR',
+    EXISTS: 'EXISTS',
 } as const;
 export type ErrorCode = typeof ErrorCode[keyof typeof ErrorCode];
+
+export interface ResponseType<T = null> {
+    success: boolean;
+    message?: string;
+    data: T;
+    errorCode: ErrorCode;
+    timestamp: string;
+}

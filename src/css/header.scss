@@ -1,0 +1,17 @@
+.main-header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2em;
+    align-items: center;
+    background-color: var(--dark-color3);
+    margin-bottom: 5em;
+    
+    h1, p {
+        color: var(--color5)
+    }
+    a{
+        text-decoration: none;
+    }
+}

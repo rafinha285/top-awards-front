@@ -1,0 +1,78 @@
+/* Color Theme Swatches in Hex */
+.Northern-lights-in-the-Canadian-Rockies,-Jasper-1-hex { color: #172026; }
+.Northern-lights-in-the-Canadian-Rockies,-Jasper-2-hex { color: #5FCDD9; }
+.Northern-lights-in-the-Canadian-Rockies,-Jasper-3-hex { color: #027373; }
+.Northern-lights-in-the-Canadian-Rockies,-Jasper-4-hex { color: #04BFAD; }
+.Northern-lights-in-the-Canadian-Rockies,-Jasper-5-hex { color: #04BF9D; }
+//
+///* Color Theme Swatches in RGBA */
+//.Northern-lights-in-the-Canadian-Rockies,-Jasper-1-rgba { color: rgba(22, 32, 38, 1); }
+//.Northern-lights-in-the-Canadian-Rockies,-Jasper-2-rgba { color: rgba(95, 204, 216, 1); }
+//.Northern-lights-in-the-Canadian-Rockies,-Jasper-3-rgba { color: rgba(2, 114, 114, 1); }
+//.Northern-lights-in-the-Canadian-Rockies,-Jasper-4-rgba { color: rgba(3, 191, 172, 1); }
+//.Northern-lights-in-the-Canadian-Rockies,-Jasper-5-rgba { color: rgba(3, 191, 156, 1); }
+//
+///* Color Theme Swatches in HSLA */
+//.Northern-lights-in-the-Canadian-Rockies,-Jasper-1-hsla { color: hsla(202, 25, 12, 1); }
+//.Northern-lights-in-the-Canadian-Rockies,-Jasper-2-hsla { color: hsla(185, 61, 61, 1); }
+//.Northern-lights-in-the-Canadian-Rockies,-Jasper-3-hsla { color: hsla(180, 96, 22, 1); }
+//.Northern-lights-in-the-Canadian-Rockies,-Jasper-4-hsla { color: hsla(174, 96, 38, 1); }
+//.Northern-lights-in-the-Canadian-Rockies,-Jasper-5-hsla { color: hsla(168, 96, 38, 1); }
+
+:root{
+    --color1: #172026;
+    --color2: #5FCDD9;
+    --color3: #027373;
+    --dark-color3: #023232;
+    --color4: #04BFAD;
+    --color5: #04BF9D;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, serif;
+    font-size: 18px;
+}
+html {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    background-color: var(--color1) !important;
+    margin: 0 !important;
+    min-height: 100vh;
+}
+
+.error-wrapper{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    background-color: var(--color2);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    p{
+        color: var(--dark-color3);
+    }
+    .error{
+        margin: 0;
+    }
+    .error-reason , .error-status{
+        margin: 0;
+        color: var(--color3)
+    }
+    .error-status{
+        font-size: .6rem;
+    }
+    
+    button{
+        background: none;
+        border: var(--dark-color3) 1px solid;
+        border-radius: 0.5rem;
+        color: var(--dark-color3);
+        margin-top: 1rem;
+    }
+}

@@ -1,0 +1,7 @@
+services:
+  frontend:
+    build: .
+    container_name: topawards-front
+    ports:
+      - "8081:8081" # Vai rodar na porta 80 do servidor
+    restart: always
