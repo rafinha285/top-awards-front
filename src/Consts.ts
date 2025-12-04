@@ -1,1 +1,1 @@
-export const API_URL = "https://awards.animefoda.top/api";
+export const API_URL = "https://awards-api.animefoda.top/api";
