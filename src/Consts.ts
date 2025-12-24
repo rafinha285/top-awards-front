@@ -1,1 +1,1 @@
-export const API_URL = "https://awards-api.animefoda.top/api";
+export const API_URL = import.meta.env.VITE_API_URL || "https://awards-api.animefoda.top";
